@@ -1,0 +1,440 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3D4F43E1-04E5-442E-BBE9-2DE13FA19E15}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Gurbai_Bogdan_Bomberman</RootNamespace>
+    <AssemblyName>Gurbai_Bogdan_Bomberman</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="End.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="End.Designer.cs">
+      <DependentUpon>End.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lobby.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lobby.Designer.cs">
+      <DependentUpon>Lobby.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lvl1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lvl1.Designer.cs">
+      <DependentUpon>lvl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lvl2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lvl2.Designer.cs">
+      <DependentUpon>lvl2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lvl3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lvl3.Designer.cs">
+      <DependentUpon>lvl3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lvl4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lvl4.Designer.cs">
+      <DependentUpon>lvl4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lvl5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lvl5.Designer.cs">
+      <DependentUpon>lvl5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lvl6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lvl6.Designer.cs">
+      <DependentUpon>lvl6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lvl7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lvl7.Designer.cs">
+      <DependentUpon>lvl7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lvl8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lvl8.Designer.cs">
+      <DependentUpon>lvl8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="End.resx">
+      <DependentUpon>End.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lobby.resx">
+      <DependentUpon>Lobby.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lvl1.resx">
+      <DependentUpon>lvl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lvl2.resx">
+      <DependentUpon>lvl2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lvl3.resx">
+      <DependentUpon>lvl3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lvl4.resx">
+      <DependentUpon>lvl4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lvl5.resx">
+      <DependentUpon>lvl5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lvl6.resx">
+      <DependentUpon>lvl6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lvl7.resx">
+      <DependentUpon>lvl7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lvl8.resx">
+      <DependentUpon>lvl8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\block.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\block_spart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bomb1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bomb2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\explosieLatime.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\explosieLatimeInvers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\explozie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\explozieInaltime.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\explozieInaltimeInvers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fundal_basic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fundal_generic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inamicdespawn1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inamicdespawn2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\orange1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\orange2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\orange3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\orangedead.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\playerdead1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\playerdead2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\playerdespawn1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\playerdespawn2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\playerdown1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\playerdown2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\playeridledown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\playeridleleft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\playeridleright.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\playeridleup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\playerleft1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\playerleft2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\playerright1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\playerright2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\playerup1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\playerup2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poarta_dead.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poarta1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poarta2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\powerup_distanta_dead.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\powerup_distanta1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\powerup_distanta2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\control_escape.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\control_spacebar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\control_wasd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\play_campaign.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\play_training.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\control_exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\purple1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\purple2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\purple3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\purpledead.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\powerup_bomba_dead.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\powerup_bomba1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\powerup_bomba2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\game_over_text.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\blue1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\blue2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\blue3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\bluedead.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\powerup_viata1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\powerup_viata2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\powerup_viatadead.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\brown1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\brown2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\brown3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\browndead.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\powerup_speed1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\powerup_speed2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\powerup_speedead.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fundal_wide.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boss11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boss12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boss13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boss21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boss22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boss23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boss31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boss32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boss33.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boss41.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boss42.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boss43.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boss51.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boss52.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boss53.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bossdead.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bosswhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fundal_sfarsit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\HIGHSCORE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fundal_start.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
